@@ -1,19 +1,34 @@
 // src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Footer from './components/footer';
+// Importing page components 
+import Home from './pages/Home';
+import About from './pages/About';
+import Clergy from './pages/Clergy';
+import Outstations from './pages/Outstations';
+import Groups from './pages/Groups';
+import Contact from './pages/Contact';
+import Donate from './pages/Donate';
 
 const App = () => {
   return (
-    <div className="bg-yellow-100 min-h-screen flex flex-col">
+    <Router>
       <Navbar />
       <Hero />
-      <main className="flex-grow p-4">
-        {/* Include your main content here */}
-      </main>
+      <Routes>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/clergy" component={Clergy} />
+        <Route path="/outstations" component={Outstations} />
+        <Route path="/groups" component={Groups} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/donate" component={Donate} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 };
 
