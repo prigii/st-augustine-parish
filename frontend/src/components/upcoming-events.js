@@ -1,13 +1,13 @@
 // src/components/About.js
 import React from 'react';
 
-const About = () => {
+const UpcomingEvents = () => {
   return (
     <section id="about" className="p-8 bg-gray-100">
-      <h2 className="text-2xl font-bold">About Us</h2>
-      <p className="mt-4">Information about St Augustine Catholic Parish, Juja...</p>
+      <h2 className="text-2xl font-bold">Upcoming Events</h2>
+      <p className="mt-4">Get ahead of time by preparing for our upcoming events</p>
     </section>
   );
 };
 
-export default About;
+export default UpcomingEvents;

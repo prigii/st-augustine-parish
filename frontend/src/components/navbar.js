@@ -38,8 +38,8 @@ const Navbar = () => {
         <li className="text-center md:text-left"><NavLink to="/clergy" className="block text-l font-semibold py-2 md:py-0 custom-underline" activeClassName="underline text-yellow-700" onClick={closeMenu}>Clergy</NavLink></li>
         <li className="text-center md:text-left"><NavLink to="/outstations" className="block text-l font-semibold py-2 md:py-0 custom-underline" activeClassName="underline text-yellow-700" onClick={closeMenu}>Outstations</NavLink></li>
         <li className="text-center md:text-left"><NavLink to="/groups" className="block text-l font-semibold py-2 md:py-0 custom-underline" activeClassName="underline text-yellow-700" onClick={closeMenu}>Groups</NavLink></li>
-        <li><button><NavLink to="/contact" className="bg-yellow-700 text-black block text-l font-semibold px-4 py-2 rounded hover:bg-yellow-800">Contact</NavLink></button></li>
-        <li><button><NavLink to="/donate" className="bg-yellow-700 text-black block text-l font-semibold px-4 py-2 rounded hover:bg-yellow-800">Donate</NavLink></button></li>  
+        <li className="text-center md:text-left"><button><NavLink to="/contact" className="bg-yellow-700 text-black block text-l font-semibold px-4 py-2 rounded hover:bg-yellow-800">Contact</NavLink></button></li>
+        <li className="text-center md:text-left"><button><NavLink to="/donate" className="bg-yellow-700 text-black block text-l font-semibold px-4 py-2 rounded hover:bg-yellow-800">Donate</NavLink></button></li>  
       </ul>
     </nav>
   );

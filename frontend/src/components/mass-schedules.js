@@ -1,13 +1,13 @@
 // src/components/About.js
 import React from 'react';
 
-const About = () => {
+const MassSchedules = () => {
   return (
     <section id="about" className="p-8 bg-gray-100">
-      <h2 className="text-2xl font-bold">About Us</h2>
-      <p className="mt-4">Information about St Augustine Catholic Parish, Juja...</p>
+      <h2 className="text-2xl font-bold">Mass Schedules</h2>
+      <p className="mt-4">Learn about schedules for masses at our parish</p>
     </section>
   );
 };
 
-export default About;
+export default MassSchedules;

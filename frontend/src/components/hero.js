@@ -10,11 +10,11 @@ const Hero = () => {
           <p className="mt-4 text-lg">Join us for our Mass proceedings and community events at the heart of Juja.</p>
           <div className="mt-6 space-x-4">
             <button className="bg-yellow-700 text-black px-4 py-2 rounded hover:bg-yellow-800">About Us</button>
-            <button className="bg-white text-black border border-yellow-700 px-4 py-2 rounded hover:bg-yellow-700 hover:text-white">Visit Us</button>
+            <button className="bg-white text-black border-2 border-yellow-700 px-4 py-2 rounded hover:bg-yellow-700 hover:text-white">Visit Us</button>
           </div>
         </div>
         <div className="w-full md:w-1/2 flex items-center justify-center p-4">
-          <img src={churchImage} alt="St Augustine" className="h-auto w-full max-w-full max-h-96 rounded-lg object-cover transform scale-105" />
+          <img src={churchImage} alt="St Augustine" className="h-auto w-full max-w-full max-h-96 rounded-lg object-cover transform scale-100" />
         </div>
       </div>
     </section>

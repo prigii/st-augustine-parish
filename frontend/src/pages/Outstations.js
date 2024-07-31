@@ -3,9 +3,11 @@ import React from 'react';
 
 const Outstations = () => {
   return (
-    <div>
-      <h1>Outstations Page</h1>
-    </div>
+ 
+      <div>
+        <h1 className='text-black font-bold'>Outstations Page</h1>
+      </div>
+    
   );
 };
 
