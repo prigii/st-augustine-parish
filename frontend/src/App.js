@@ -16,7 +16,7 @@ const App = () => {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow pb-16">
+        <main className="flex-grow p-8">
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
             <Route path="/about" element={<About />} />

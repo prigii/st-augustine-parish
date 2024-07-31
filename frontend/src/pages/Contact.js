@@ -5,7 +5,7 @@ import React from 'react';
 const Contact = () => {
   return (
     
-      <div>
+      <div className='p-8'>
         <h1>Contacts Page</h1>
       </div>
     

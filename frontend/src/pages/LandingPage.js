@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from '../components/hero';
 import About from '../components/about';
 import Clergy from '../components/clergy';
-import MassSchedules from '../components/mass-schedules';
+import MassSchedule from '../components/mass-schedules';
 import UpcomingEvents from '../components/upcoming-events';
 import Contact from '../components/contact';
 import Donate from '../components/donate';
@@ -16,10 +16,10 @@ const LandingPage = () => {
       <Hero />
       <About />
       <Clergy />
-      <MassSchedules />
-      <UpcomingEvents />
+      <MassSchedule />
+      {/* <UpcomingEvents /> */}
       <Sacraments />
-      <Contact />
+      {/* <Contact /> */}
       <Donate />
       
       {/* Add other sections here... */}

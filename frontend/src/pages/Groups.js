@@ -5,8 +5,9 @@ import React from 'react';
 const Groups = () => {
   return (
   
-      <div>
+      <div className='p-8'>
         <h1>Groups Page</h1>
+        <p>Information about Groups will go in here</p>
       </div>
   )  
 };
