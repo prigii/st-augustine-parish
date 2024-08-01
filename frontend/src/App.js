@@ -14,9 +14,9 @@ import LandingPage from './pages/LandingPage';
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-grow p-8">
+        <main className="main-content flex-grow">
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
             <Route path="/about" element={<About />} />

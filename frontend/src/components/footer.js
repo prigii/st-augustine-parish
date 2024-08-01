@@ -1,30 +1,79 @@
-// src/components/Footer.js
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import churchImage from '../assets/church.jpg';
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState('down');
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = useCallback(() => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY && scrollDirection !== 'down') {
+      setScrollDirection('down');
+    } else if (currentScrollY < lastScrollY && scrollDirection !== 'up') {
+      setScrollDirection('up');
+    }
+    setLastScrollY(currentScrollY);
+  }, [lastScrollY, scrollDirection]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.innerHeight + window.scrollY;
-      const footerHeight = document.querySelector('footer').offsetHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-
-      if (scrollPosition >= documentHeight - footerHeight) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [handleScroll]);
+
+  useEffect(() => {
+    if (scrollDirection === 'down' && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  }, [scrollDirection]);
 
   return (
-    <footer className={`bg-yellow-700 text-white p-4 mt-8 fixed bottom-0 w-full transition-transform duration-300 ${isVisible ? 'translate-y-0' : 'translate-y-full'}`}>
-      <div className="container mx-auto text-center">
-        <p>Contact Information | Physical Location | Social Media Links</p>
+    <footer 
+      className={`bg-yellow-700 text-white p-8 w-full transition-transform duration-300 ${isVisible ? 'translate-y-0' : 'translate-y-full'}`}
+      style={{ backgroundImage: `url(${churchImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
+      <div className="bg-gray-900 bg-opacity-50 p-8 rounded-lg">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold">Contact Us</h2>
+          <table className="mx-auto my-4 text-left w-auto border-collapse border border-gray-400">
+            <tbody>
+              <tr>
+                <td className="pr-4 border border-gray-400">Address:</td>
+                <td className="border border-gray-400">Gachororo Road, Juja, Kenya</td>
+              </tr>
+              <tr>
+                <td className="pr-4 border border-gray-400">Phone:</td>
+                <td className="border border-gray-400">+254 712 345 678</td>
+              </tr>
+              <tr>
+                <td className="pr-4 border border-gray-400">Email:</td>
+                <td className="border border-gray-400">info@staugustinejuja.org</td>
+              </tr>
+              <tr>
+                <td className="pr-4 border border-gray-400">Office Hours:</td>
+                <td className="border border-gray-400">Monday - Friday, 8 AM - 4 PM</td>
+              </tr>
+            </tbody>
+          </table>
+          <p className="mt-4">We're here to assist you. Feel free to reach out with any questions or to schedule a visit.</p>
+          <div className="flex justify-center space-x-4 mt-4">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter size={24} />
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebook size={24} />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={24} />
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <FaYoutube size={24} />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
