@@ -10,28 +10,36 @@ const sacramentsData = [
   },
   {
     number: 2,
-    title: 'Reconciliation',
+    title: 'Penance & Reconciliation',
     description: 'Find healing and forgiveness through the Sacrament of Reconciliation.'
   },
   {
     number: 3,
+    title: 'Holy Eucharist',
+    description: 'Participate in the holy banquet of our Lord Jesus Christ through the sacrament of the Eucharist.'
+    
+  },
+  {
+    number: 4,
+    title: 'Confirmation',
+    description: 'Get prepared to receive the fruits and gifts of the Holy Spirit.'
+    
+  },
+  {
+    number: 5,
+    title: 'Anointing of the Sick',
+    description: 'Receive the healing grace of God during times of illness or struggle.'
+    
+  },
+  {
+    number: 6,
     title: 'Matrimony',
     description: 'Let us guide you as you embark on the sacrament of marriage.'
   },
   {
-    number: 4,
-    title: 'Anointing of the Sick',
-    description: 'Receive the healing grace of God during times of illness or struggle.'
-  },
-  {
-    number: 5,
-    title: 'Holy Eucharist',
-    description: 'Participate in the holy banquet of our Lord Jesus Christ through the sacrament of the Eucharist.'
-  },
-  {
-    number: 6,
-    title: 'Confirmation',
-    description: 'Get prepared to receive the fruits and gifts of the Holy Spirit.'
+    number: 7,
+    title: 'Holy Orders',
+    description: 'For the harvest is plenty but the labourers are few in the vineyard of the Lord. Come and be guided how to join the religious and priesthood.'
   }
 ];
 
