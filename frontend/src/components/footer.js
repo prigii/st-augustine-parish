@@ -1,41 +1,14 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import churchImage from '../assets/church.jpg';
 
 const Footer = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const [scrollDirection, setScrollDirection] = useState('down');
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const handleScroll = useCallback(() => {
-    const currentScrollY = window.scrollY;
-    if (currentScrollY > lastScrollY && scrollDirection !== 'down') {
-      setScrollDirection('down');
-    } else if (currentScrollY < lastScrollY && scrollDirection !== 'up') {
-      setScrollDirection('up');
-    }
-    setLastScrollY(currentScrollY);
-  }, [lastScrollY, scrollDirection]);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [handleScroll]);
-
-  useEffect(() => {
-    if (scrollDirection === 'down' && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  }, [scrollDirection]);
-
   return (
     <footer 
-      className={`bg-yellow-700 text-white p-8 w-full transition-transform duration-300 ${isVisible ? 'translate-y-0' : 'translate-y-full'}`}
+      className="bg-yellow-700 text-white p-8 w-full transition-transform duration-300"
       style={{ backgroundImage: `url(${churchImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      <div className="bg-gray-900 bg-opacity-50 p-8 rounded-lg">
+      <div className="bg-gray-900 bg-opacity-50 rounded-lg">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold">Contact Us</h2>
           <table className="mx-auto my-4 text-left w-auto border-collapse border border-gray-400">

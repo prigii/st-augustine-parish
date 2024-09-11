@@ -4,7 +4,7 @@ import React from 'react';
 const Outstations = () => {
   return (
  
-      <div>
+      <div className='p-8'>
         <h1 className='text-black font-bold'>Outstations Page</h1>
       </div>
     

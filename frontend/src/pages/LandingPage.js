@@ -9,21 +9,24 @@ import MassSchedule from '../components/mass-schedules';
 import Donate from '../components/donate';
 import Sacraments from '../components/sacraments';
 
+
+
 const LandingPage = () => {
   return (
     <div>
       
       <Hero />
       <About />
-      <Clergy />
       <MassSchedule />
       {/* <UpcomingEvents /> */}
       <Sacraments />
+
       {/* <Contact /> */}
       <Donate />
-      
-      {/* Add other sections here... */}
+      <Clergy />
+     
     </div>
+    
   );
 };
 

@@ -1,25 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/staugustine.jpg'; // adjust the path based on your file structure
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for Groups dropdown
+  const [isOutstationsOpen, setIsOutstationsOpen] = useState(false); // State for Outstations dropdown
+  
+  const dropdownRef = useRef(null); // Ref for Groups dropdown menu
+  const outstationsRef = useRef(null); // Ref for Outstations dropdown menu
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   const closeMenu = () => {
     setIsOpen(false);
   };
 
+  const toggleOutstations = () => {
+    setIsOutstationsOpen(!isOutstationsOpen);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav className="bg-white shadow-md p-4 text-black fixed w-full top-0 z-50   flex flex-col md:flex-row justify-between items-center">
+    <nav className="bg-white shadow-md p-4 text-black fixed w-full top-0 z-50 flex flex-col md:flex-row justify-between items-center">
       <div className="flex items-center justify-between w-full md:w-auto ml-20 mr-12">
         <div className="flex items-center">
           <img src={logo} alt="St Augustine" className="h-10 w-10 mr-3" />
           <div className="text-xl font-bold">
-            St. Augustine Catholic Parish & JKUAT Chaplaincy, Juja
+            St. Augustine Catholic Parish & University Chaplaincy, Juja
           </div>
         </div>
         <button className="md:hidden" onClick={toggleMenu}>
@@ -57,11 +84,9 @@ const Navbar = () => {
         </button>
       </div>
       <ul
-        className={`md:flex space-x-4 ${
-          isOpen ? "block" : "hidden"
-        } md:block w-full md:w-auto mt-4 md:mt-0`}
+        className={`md:flex space-x-4 ${isOpen ? "block" : "hidden"} md:block w-full md:w-auto mt-4 md:mt-0`}
       >
-        <li className="text-center md:text-left">
+        <li className="text-center md:text-left relative">
           <NavLink
             to="/"
             className="block text-l font-semibold py-2 md:py-0 custom-underline"
@@ -72,7 +97,7 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
-        <li className="text-center md:text-left">
+        <li className="text-center md:text-left relative">
           <NavLink
             to="/about"
             className="block text-l font-semibold py-2 md:py-0 custom-underline"
@@ -82,7 +107,7 @@ const Navbar = () => {
             About
           </NavLink>
         </li>
-        <li className="text-center md:text-left">
+        <li className="text-center md:text-left relative">
           <NavLink
             to="/clergy"
             className="block text-l font-semibold py-2 md:py-0 custom-underline"
@@ -92,25 +117,191 @@ const Navbar = () => {
             Clergy
           </NavLink>
         </li>
-        <li className="text-center md:text-left">
-          <NavLink
-            to="/outstations"
-            className="block text-l font-semibold py-2 md:py-0 custom-underline"
-            activeClassName="underline text-yellow-700"
-            onClick={closeMenu}
-          >
+        <li className="text-center md:text-left relative">
+          <button onClick={toggleOutstations} className="block text-l font-semibold py-2 md:py-0 custom-underline">
             Outstations
-          </NavLink>
+          </button>
+          {isOutstationsOpen && (
+            <ul ref={outstationsRef} className="absolute bg-white shadow-lg rounded-md mt-2 z-10 w-56">
+              <li>
+                <NavLink
+                  to="/outstations/first-mass"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsOutstationsOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  First Mass
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/outstations/second-mass"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsOutstationsOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  Second Mass
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/outstations/third-mass"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsOutstationsOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  Third Mass
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/outstations/st-paul-gachororo"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsOutstationsOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  St Paul Gachororo
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/outstations/mary-mother-of-god-mirimaini"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsOutstationsOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  Mary Mother of God Mirimaini
+                </NavLink>
+              </li>
+            </ul>
+          )}
         </li>
-        <li className="text-center md:text-left">
-          <NavLink
-            to="/groups"
-            className="block text-l font-semibold py-2 md:py-0 custom-underline"
-            activeClassName="underline text-yellow-700"
-            onClick={closeMenu}
-          >
+        <li className="text-center md:text-left relative">
+          <button onClick={toggleDropdown} className="block text-l font-semibold py-2 md:py-0 custom-underline">
             Groups
-          </NavLink>
+          </button>
+          {isDropdownOpen && (
+            <ul ref={dropdownRef} className="absolute bg-white shadow-lg rounded-md mt-2 z-10 w-56">
+              <li>
+                <NavLink
+                  to="/groups/cma"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  CMA
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/groups/cwa"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  CWA
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/groups/ysc"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  YSC
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/groups/yca"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  YCA
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/groups/pmc"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  PMC
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/groups/choir"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  Choir
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/groups/sacred-heart-of-jesus"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  Sacred Heart of Jesus
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/groups/legion-of-mary"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  Legion of Mary
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/groups/self-help-group"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  Self Help Group
+                </NavLink>
+              </li>
+            </ul>
+          )}
         </li>
         <li className="text-center md:text-left">
           <button>

@@ -4,7 +4,7 @@ import donationsImage from '../assets/donations.jpg'; // Adjust the path based o
 
 const Donate = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center p-8 bg-gray-100">
+    <section className="flex flex-col md:flex-row items-center p-8 bg-gray-100 mb-0">
       <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
         <div className="w-full h-96 overflow-hidden rounded-lg shadow-md">
           <img
