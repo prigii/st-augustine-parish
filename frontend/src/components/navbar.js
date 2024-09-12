@@ -107,7 +107,7 @@ const Navbar = () => {
             About
           </NavLink>
         </li>
-        <li className="text-center md:text-left relative">
+        {/* <li className="text-center md:text-left relative">
           <NavLink
             to="/clergy"
             className="block text-l font-semibold py-2 md:py-0 custom-underline"
@@ -116,7 +116,7 @@ const Navbar = () => {
           >
             Clergy
           </NavLink>
-        </li>
+        </li> */}
         <li className="text-center md:text-left relative">
           <button onClick={toggleOutstations} className="block text-l font-semibold py-2 md:py-0 custom-underline">
             Outstations
@@ -303,15 +303,15 @@ const Navbar = () => {
             </ul>
           )}
         </li>
-        <li className="text-center md:text-left">
-          <button>
-            <NavLink
-              to="/contact"
-              className="bg-yellow-700 text-black block text-l font-semibold px-4 py-2 rounded hover:bg-yellow-800"
-            >
-              Contact
-            </NavLink>
-          </button>
+        <li className="text-center md:text-left relative">
+          <NavLink
+            to="/contact"
+            className="block text-l font-semibold py-2 md:py-0 custom-underline"
+            activeClassName="underline text-yellow-700"
+            onClick={closeMenu}
+          >
+            Contact
+          </NavLink>
         </li>
         <li className="text-center md:text-left">
           <button>

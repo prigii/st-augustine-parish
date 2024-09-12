@@ -15,13 +15,14 @@ import SecondMass from './pages/SecondMass';
 import ThirdMass from './pages/ThirdMass';
 import StPaulGachororo from './pages/StPaulGachororo';
 import MaryMotherOfGodMirimaini from './pages/MMG';
+import './index.css'
 
 const App = () => {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
         <Navbar />
-        <main className="main-content flex-grow mt-20">
+        <main className="container main-content flex-grow mt-20">
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
             <Route path="/about" element={<About />} />
