@@ -2,7 +2,7 @@
 import React from 'react';
 import Hero from '../components/hero';
 import About from '../components/about';
-import Clergy from '../components/clergy';
+// import Clergy from '../components/clergy';
 import MassSchedule from '../components/mass-schedules';
 // import UpcomingEvents from '../components/upcoming-events';
 // import Contact from '../components/contact';
@@ -23,7 +23,7 @@ const LandingPage = () => {
 
       {/* <Contact /> */}
       <Donate />
-      <Clergy />
+      {/* <Clergy /> */}
      
     </div>
     

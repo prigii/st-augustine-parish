@@ -46,6 +46,9 @@ const Footer = () => {
               <FaYoutube size={24} />
             </a>
           </div>
+          <div className="text-center mt-8 font-bold">
+        <p>&copy; 2024 St Augustine Parish Juja. All rights reserved.</p>
+      </div>
         </div>
       </div>
     </footer>

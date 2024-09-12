@@ -2,7 +2,7 @@
 import React from 'react';
 import ImageCarousel from '../components/imageCarousel';
 
-const About = () => {
+const AboutParish = () => {
   return (
     <>
       
@@ -28,4 +28,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutParish;

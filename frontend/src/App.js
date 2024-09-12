@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import About from './pages/About';
 import Clergy from './pages/Clergy';
 import Outstations from './pages/Outstations';
 import Groups from './pages/Groups';
@@ -15,6 +14,21 @@ import SecondMass from './pages/SecondMass';
 import ThirdMass from './pages/ThirdMass';
 import StPaulGachororo from './pages/StPaulGachororo';
 import MaryMotherOfGodMirimaini from './pages/MMG';
+import AboutParish from './pages/AboutParish';
+import SaintAugustine from './pages/SaintAugustine';
+import MassReadingsPrayers from './pages/MassReadingsPrayers';
+import LiveStreaming from './pages/LiveStreaming';
+import VaticanNews from './pages/VaticanNews';
+import SpiritualResources from './pages/SpiritualResources';
+import CMA from './pages/CMA';
+import CWA from './pages/CWA';
+import YSC from './pages/YSC';
+import YCA from './pages/YCA';
+import PMC from './pages/PMC';
+import Choir from './pages/Choir';
+import SacredHeartOfJesus from './pages/SacredHeartOfJesus';
+import LegionOfMary from './pages/LegionOfMary';
+import SelfHelpGroup from './pages/SelfHelpGroup';
 import './index.css'
 
 const App = () => {
@@ -22,10 +36,9 @@ const App = () => {
     <Router>
       <div className="min-h-screen flex flex-col">
         <Navbar />
-        <main className="container main-content flex-grow mt-20">
+        <main className="container mx-auto">
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
-            <Route path="/about" element={<About />} />
             <Route path="/clergy" element={<Clergy />} />
             <Route path="/outstations" element={<Outstations />} />
             <Route path="/groups" element={<Groups />} />
@@ -36,7 +49,21 @@ const App = () => {
             <Route path="/outstations/third-mass" component={ThirdMass} />
             <Route path="/outstations/st-paul-gachororo" component={StPaulGachororo} />
             <Route path="/outstations/mary-mother-of-god-mirimaini" component={MaryMotherOfGodMirimaini} />
-      
+            <Route path="/about-parish" element={<AboutParish />} />
+            <Route path="/saint-augustine" element={<SaintAugustine />} />
+            <Route path="/mass-readings-prayers" element={<MassReadingsPrayers />} />
+            <Route path="/live-streaming" element={<LiveStreaming />} />
+            <Route path="/vatican-news" element={<VaticanNews />} />
+            <Route path="/spiritual-resources" element={<SpiritualResources />} />
+            <Route path="/groups/cma" element={<CMA />} />
+            <Route path="/groups/cwa" element={<CWA />} />
+            <Route path="/groups/ysc" element={<YSC />} />
+            <Route path="/groups/yca" element={<YCA />} />
+            <Route path="/groups/pmc" element={<PMC />} />
+            <Route path="/groups/choir" element={<Choir />} />
+            <Route path="/groups/sacred-heart-of-jesus" element={<SacredHeartOfJesus />} />
+            <Route path="/groups/legion-of-mary" element={<LegionOfMary />} />
+            <Route path="/groups/self-help-group" element={<SelfHelpGroup />} />
           </Routes>
         </main>
         <Footer />

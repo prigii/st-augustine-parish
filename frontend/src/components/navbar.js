@@ -6,9 +6,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for Groups dropdown
   const [isOutstationsOpen, setIsOutstationsOpen] = useState(false); // State for Outstations dropdown
-  
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+
   const dropdownRef = useRef(null); // Ref for Groups dropdown menu
   const outstationsRef = useRef(null); // Ref for Outstations dropdown menu
+  const aboutRef = useRef(null); // Ref for About dropdown menu
 
 
   const toggleMenu = () => {
@@ -19,8 +21,14 @@ const Navbar = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const toggleAboutDropdown = () => {
+    setIsAboutDropdownOpen(!isAboutDropdownOpen);
+  };
+
   const closeMenu = () => {
     setIsOpen(false);
+    setIsDropdownOpen(false);
+    setIsAboutDropdownOpen(false);
   };
 
   const toggleOutstations = () => {
@@ -30,6 +38,12 @@ const Navbar = () => {
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsDropdownOpen(false);
+    }
+    if (outstationsRef.current && !outstationsRef.current.contains(event.target)) {
+      setIsOutstationsOpen(false);
+    }
+    if (aboutRef.current && !aboutRef.current.contains(event.target)) {
+      setIsAboutDropdownOpen(false);
     }
   };
 
@@ -41,13 +55,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-white shadow-md p-4 text-black fixed w-full top-0 z-50 flex flex-col md:flex-row justify-between items-center">
-      <div className="flex items-center justify-between w-full md:w-auto ml-20 mr-12">
+    <nav className="bg-white shadow-md p-4 text-black w-full top-0 z-50 flex flex-col md:flex-row justify-between items-center">
+      <div className="flex items-center justify-between w-full md:w-auto ml-20 mr-8">
         <div className="flex items-center">
           <img src={logo} alt="St Augustine" className="h-10 w-10 mr-3" />
-          <div className="text-xl font-bold">
-            St. Augustine Catholic Parish & University Chaplaincy, Juja
-          </div>
+          <div className="text-2xl font-bold leading-tight">
+          St. Augustine Catholic Parish &<br />University Chaplaincy, Juja
+        </div>
         </div>
         <button className="md:hidden" onClick={toggleMenu}>
           {isOpen ? (
@@ -84,7 +98,7 @@ const Navbar = () => {
         </button>
       </div>
       <ul
-        className={`md:flex space-x-4 ${isOpen ? "block" : "hidden"} md:block w-full md:w-auto mt-4 md:mt-0`}
+        className={`md:flex justify-center space-x-4 ${isOpen ? "block" : "hidden"} md:block w-full md:w-auto mt-4 md:mt-0`}
       >
         <li className="text-center md:text-left relative">
           <NavLink
@@ -98,25 +112,69 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="text-center md:text-left relative">
-          <NavLink
-            to="/about"
-            className="block text-l font-semibold py-2 md:py-0 custom-underline"
-            activeClassName="text-yellow-700"
-            onClick={closeMenu}
-          >
+          <button onClick={toggleAboutDropdown} className="block text-l font-semibold py-2 md:py-0 custom-underline">
             About
-          </NavLink>
+          </button>
+          {isAboutDropdownOpen && (
+            <ul ref={aboutRef} className="absolute bg-white shadow-lg rounded-md mt-2 z-10 w-56">
+              <li>
+                <NavLink
+                  to="/about-parish"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={closeMenu}
+                >
+                  About the Parish
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/saint-augustine"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={closeMenu}
+                >
+                  Saint Augustine
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/mass-readings-prayers"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={closeMenu}
+                >
+                  Mass Readings & Prayers
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/live-streaming"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={closeMenu}
+                >
+                  Live Streaming
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/vatican-news"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={closeMenu}
+                >
+                  Vatican News
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/spiritual-resources"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={closeMenu}
+                >
+                  Spiritual Resources
+                </NavLink>
+              </li>
+            </ul>
+          )}
         </li>
-        {/* <li className="text-center md:text-left relative">
-          <NavLink
-            to="/clergy"
-            className="block text-l font-semibold py-2 md:py-0 custom-underline"
-            activeClassName="underline text-yellow-700"
-            onClick={closeMenu}
-          >
-            Clergy
-          </NavLink>
-        </li> */}
+        
         <li className="text-center md:text-left relative">
           <button onClick={toggleOutstations} className="block text-l font-semibold py-2 md:py-0 custom-underline">
             Outstations
