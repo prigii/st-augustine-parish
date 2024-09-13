@@ -4,7 +4,7 @@ import React from 'react';
 const Donate = () => {
   return (
       
-    <div className='p-4'>
+    <div className='max-w-4xl mx-auto'>
       <h1>Donate Page</h1>
     </div>
     

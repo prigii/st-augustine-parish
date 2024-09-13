@@ -2,10 +2,25 @@ import React from 'react';
 
 const SacredHeartOfJesus = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="max-w-4xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">Sacred Heart of Jesus</h1>
-      <p>Welcome to the Sacred Heart of Jesus group page. Here you can find information about our activities, meetings, and more.</p>
-      {/* Add more details as needed */}
+      <p className='font-bold mb-4'>Meeting times: Sunday 3pm - 4pm (St Augustine Center)</p>
+      <p className="mb-4">
+        The Sacred Heart Devotion is a response to the
+        awareness of Jesus’ infinite Love for mankind, the
+        majority of whom constantly reject Him by
+        persistence in their sinful ways or who respond to
+        His Love with indifference and even outrages. 
+      </p>
+      <p className="mb-4">
+        Devotion is hence a call to make reparation to
+        Jesus’ wounded Heart thus granting It consolation.
+        This is done particularly on the first friday of the
+        month. Our Parish provides us an
+        opportunity for Adoration, Confession and Mass in
+        Reparation to the Sacred Heart of Jesus.
+      </p>
+     
     </div>
   );
 };

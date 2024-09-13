@@ -8,7 +8,7 @@ import bannerImage from '../assets/church.jpg'; // adjust the path based on your
 
 const SaintAugustine = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="max-w-4xl mx-auto">
       <div className="relative w-full h-64 mb-4">
         <img
           src={bannerImage}

@@ -47,7 +47,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="text-center mt-8 font-bold">
-        <p>&copy; 2024 St Augustine Parish Juja. All rights reserved.</p>
+        <p>&copy; 2024 St Augustine Catholic Parish & University Chaplaincy, JKUAT, Juja. All rights reserved.</p>
       </div>
         </div>
       </div>

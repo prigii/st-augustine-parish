@@ -5,6 +5,7 @@
   
   .contact-info {
     margin-bottom: 20px;
+    
   }
   
   .contact-info p {
@@ -13,8 +14,8 @@
   
   .map-container {
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    /* max-width: 600px; */
+    margin: 0;
     overflow: hidden;
     padding-top: 56.25%; /* 16:9 Aspect Ratio */
     position: relative;

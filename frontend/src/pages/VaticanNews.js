@@ -3,7 +3,7 @@ import bannerImage from '../assets/church.jpg'; // adjust the path based on your
 
 const VaticanNews = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="max-w-4xl mx-auto">
       <div className="relative w-full h-64 mb-4">
         <img
           src={bannerImage}
@@ -18,7 +18,7 @@ const VaticanNews = () => {
         Stay updated with the latest news from the Vatican and the global Catholic Church. Find out about important events, messages from the Pope, and more.
       </p>
       <div className='text-red-400 font-bold p-4'>
-          <p><a href="https://www.vaticannews.va/en.html" className='text-color-yellow-500 underline'>Get Vatican News here</a></p>
+          <p><a href="https://www.vaticannews.va/en.html" target='new'>Get Vatican News here</a></p>
       </div>
     </div>
    

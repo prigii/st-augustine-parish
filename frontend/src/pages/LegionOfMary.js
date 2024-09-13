@@ -2,10 +2,29 @@ import React from 'react';
 
 const LegionOfMary = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="max-w-4xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">Legion of Mary</h1>
-      <p>Welcome to the Legion of Mary page. Here you can find information about our activities, meetings, and more.</p>
-      {/* Add more details as needed */}
+      <p className='font-bold mb-4'>Meeting times: Sunday 3pm - 4pm (St Augustine Center)</p>
+      <p className="mb-4">
+        The Legion of Mary is a Catholic lay movement that
+        was founded in November 1936 by Edel Quinn in
+        Africa. The movement emphasizes devotion to the
+        Blessed Virgin Mary and is dedicated to performing
+        acts of charity, prayer, and spiritual growth.
+      </p>
+      <p className="mb-4">
+        In Juja, the Legion of Mary began in 2016. The main
+        activities of the Legion of Mary include praying the
+        rosary, reciting the Catena, reading the Legion
+        handbook, and engaging in charitable work
+        Currently, there are 10 active members who
+        participate in all activities.
+      </p>
+      <p className="mb-4">
+        The group welcomes more members to join them, so they can continue
+        their charitable works, prayer, and living out the
+        Legionary spirit as exemplified by Edel Quinn.
+      </p>
     </div>
   );
 };

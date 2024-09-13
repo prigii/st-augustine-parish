@@ -276,6 +276,18 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
+                  to="/groups/yca"
+                  className="block px-4 py-2 text-black hover:bg-gray-200"
+                  onClick={() => {
+                    closeMenu();
+                    setIsDropdownOpen(false); // Close dropdown on item click
+                  }}
+                >
+                  YCA
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/groups/ysc"
                   className="block px-4 py-2 text-black hover:bg-gray-200"
                   onClick={() => {
@@ -288,14 +300,14 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/groups/yca"
+                  to="/groups/mym"
                   className="block px-4 py-2 text-black hover:bg-gray-200"
                   onClick={() => {
                     closeMenu();
                     setIsDropdownOpen(false); // Close dropdown on item click
                   }}
                 >
-                  YCA
+                  MYM
                 </NavLink>
               </li>
               <li>

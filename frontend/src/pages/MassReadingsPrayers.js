@@ -3,7 +3,7 @@ import bannerImage from '../assets/church.jpg'; // adjust the path based on your
 
 const MassReadingsPrayers = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="max-w-4xl mx-auto">
       <div className="relative w-full h-64 mb-4">
         <img
           src={bannerImage}
@@ -18,7 +18,7 @@ const MassReadingsPrayers = () => {
         Here you can find the daily mass readings and a collection of prayers to help you in your spiritual journey. Join us in prayer and reflection.
       </p>
       <div className='text-red-400 font-bold p-4'>
-          <p><a href="https://www.universalis.com/africa.kenya/0/mass.htm" className='text-color-yellow-500 underline'>Get Today's Readings here</a></p>
+          <p><a href="https://www.universalis.com/africa.kenya/0/mass.htm" target='new' className='text-color-yellow-500 underline'>Get Today's Readings here</a></p>
       </div>
     </div>
   );

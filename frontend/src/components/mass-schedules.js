@@ -38,7 +38,7 @@ const MassSchedule = () => {
             <div className="w-1/2 flex justify-end pr-8">
               <div className="text-right">
                 <h3 className="text-xl font-semibold">Holy Days' Masses</h3>
-                <p>Check the parish bulletin or website for specific times.</p>
+                <p>Check the parish bulletin for specific times.</p>
               </div>
             </div>
             <div className="relative">
@@ -50,7 +50,7 @@ const MassSchedule = () => {
         </ul>
       </div>
       <div className="mt-8 text-center">
-        <a href="/outstations-schedule" className="text-yellow-700 hover:underline">
+        <a href="/about-parish" className="text-yellow-700 hover:underline">
           Check mass schedules for our outstations
         </a>
       </div>

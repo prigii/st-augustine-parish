@@ -25,6 +25,7 @@ import CWA from './pages/CWA';
 import YSC from './pages/YSC';
 import YCA from './pages/YCA';
 import PMC from './pages/PMC';
+import MYM from './pages/MYM';
 import Choir from './pages/Choir';
 import SacredHeartOfJesus from './pages/SacredHeartOfJesus';
 import LegionOfMary from './pages/LegionOfMary';
@@ -44,11 +45,11 @@ const App = () => {
             <Route path="/groups" element={<Groups />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/donate" element={<Donate />} />
-            <Route path="/outstations/first-mass" component={FirstMass} />
-            <Route path="/outstations/second-mass" component={SecondMass} />
-            <Route path="/outstations/third-mass" component={ThirdMass} />
-            <Route path="/outstations/st-paul-gachororo" component={StPaulGachororo} />
-            <Route path="/outstations/mary-mother-of-god-mirimaini" component={MaryMotherOfGodMirimaini} />
+            <Route path="/outstations/first-mass" element={<FirstMass />} />
+            <Route path="/outstations/second-mass" element={<SecondMass />} />
+            <Route path="/outstations/third-mass" element={<ThirdMass />} />
+            <Route path="/outstations/st-paul-gachororo" element={<StPaulGachororo />} />
+            <Route path="/outstations/mary-mother-of-god-mirimaini" element={<MaryMotherOfGodMirimaini />} />
             <Route path="/about-parish" element={<AboutParish />} />
             <Route path="/saint-augustine" element={<SaintAugustine />} />
             <Route path="/mass-readings-prayers" element={<MassReadingsPrayers />} />
@@ -60,6 +61,7 @@ const App = () => {
             <Route path="/groups/ysc" element={<YSC />} />
             <Route path="/groups/yca" element={<YCA />} />
             <Route path="/groups/pmc" element={<PMC />} />
+            <Route path="/groups/mym" element={<MYM />} />
             <Route path="/groups/choir" element={<Choir />} />
             <Route path="/groups/sacred-heart-of-jesus" element={<SacredHeartOfJesus />} />
             <Route path="/groups/legion-of-mary" element={<LegionOfMary />} />
