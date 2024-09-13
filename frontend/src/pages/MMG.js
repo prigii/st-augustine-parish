@@ -3,7 +3,7 @@ import React from 'react';
 const MaryMotherOfGodMirimaini = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Mary Mother of God Catholic Church, Mirimaini</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">Mary Mother of God Catholic Church, Mirimaini</h1>
       <p>Welcome to the Mary Mother of God Catholic Church, Mirimaini page.</p>
       <p className='font-bold'>Mass times: Sunday 7.30am - 9am</p>
       <p className="mb-4">

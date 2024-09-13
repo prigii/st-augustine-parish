@@ -18,8 +18,8 @@ const Donate = () => {
         <h2 className="text-3xl font-bold mb-4">Donate and Support</h2>
         <p className="mb-6">Your generous donations and volunteer efforts help us continue our mission of serving the Juja community.</p>
         <div className="flex justify-center md:justify-start space-x-4">
-          <a href="/donate" className="bg-yellow-700 text-black px-4 py-2 rounded hover:bg-yellow-800">Donate</a>
-          <a href="/donate" className="bg-white text-black border border-yellow-700 px-4 py-2 rounded hover:bg-yellow-700 hover:text-white">Support Us</a>
+          <a href="/donate" className="bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-700">Donate</a>
+          <a href="/donate" className="bg-white text-black border border-yellow-500 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white">Support Us</a>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import React from 'react';
 const Choir = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Choir</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">Choir</h1>
       <p className="mb-4">
         St. Augustine Catholic Parish and University Chaplaincy, Juja, comprises
         of five main choirs:

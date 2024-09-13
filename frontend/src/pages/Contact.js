@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 const Contact = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+      <h1 className="text-4xl font-bold mb-4 text-yellow-500">Contact Us</h1>
       <div className="map-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0844281489153!2d37.01644620429814!3d-1.0989650013166896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f463d30d01ad1%3A0x7a1fa86fe8c18f6!2sSt.%20Augustine%20Catholic%20Parish%20%26%20JKUAT%20Chaplaincy%20%2C%20Juja!5e0!3m2!1sen!2ske!4v1726121371721!5m2!1sen!2ske"

@@ -6,7 +6,7 @@ const MassSchedule = () => {
     <section id="mass-schedule" className="p-8 bg-gray-100">
       <h2 className="text-3xl font-bold mb-8 text-center">Mass Schedule</h2>
       <div className="relative max-w-2xl mx-auto">
-        <div className="border-r-4 border-yellow-700 absolute h-full top-0 left-1/2 transform -translate-x-1/2"></div>
+        <div className="border-r-4 border-yellow-500 absolute h-full top-0 left-1/2 transform -translate-x-1/2"></div>
         <ul className="list-none p-0 m-0">
           <li className="mb-16 flex items-center">
             <div className="w-1/2 flex justify-end pr-8">
@@ -16,16 +16,16 @@ const MassSchedule = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-yellow-700 w-8 h-8 rounded-full text-white flex items-center justify-center z-10">1</div>
-              <div className="border-b-2 border-yellow-700 absolute right-full top-1/2 transform -translate-y-1/2 w-8"></div>
+              <div className="bg-yellow-500 w-8 h-8 rounded-full text-white flex items-center justify-center z-10">1</div>
+              <div className="border-b-2 border-yellow-500 absolute right-full top-1/2 transform -translate-y-1/2 w-8"></div>
             </div>
             <div className="w-1/2 pl-8"></div>
           </li>
           <li className="mb-16 flex items-center">
             <div className="w-1/2 pr-8"></div>
             <div className="relative">
-              <div className="bg-yellow-700 w-8 h-8 rounded-full text-white flex items-center justify-center z-10">2</div>
-              <div className="border-b-2 border-yellow-700 absolute left-full top-1/2 transform -translate-y-1/2 w-8"></div>
+              <div className="bg-yellow-500 w-8 h-8 rounded-full text-white flex items-center justify-center z-10">2</div>
+              <div className="border-b-2 border-yellow-500 absolute left-full top-1/2 transform -translate-y-1/2 w-8"></div>
             </div>
             <div className="w-1/2 flex justify-start pl-8">
               <div className="text-left">
@@ -42,15 +42,15 @@ const MassSchedule = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-yellow-700 w-8 h-8 rounded-full text-white flex items-center justify-center z-10">3</div>
-              <div className="border-b-2 border-yellow-700 absolute right-full top-1/2 transform -translate-y-1/2 w-8"></div>
+              <div className="bg-yellow-500 w-8 h-8 rounded-full text-white flex items-center justify-center z-10">3</div>
+              <div className="border-b-2 border-yellow-500 absolute right-full top-1/2 transform -translate-y-1/2 w-8"></div>
             </div>
             <div className="w-1/2 pl-8"></div>
           </li>
         </ul>
       </div>
       <div className="mt-8 text-center">
-        <a href="/about-parish" className="text-yellow-700 hover:underline">
+        <a href="/about-parish" className="text-yellow-500 font-bold hover:underline">
           Check mass schedules for our outstations
         </a>
       </div>

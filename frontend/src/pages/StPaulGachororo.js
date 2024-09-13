@@ -3,7 +3,7 @@ import React from 'react';
 const StPaulGachororo = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">St Paul Catholic Church, Gachororo</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">St Paul Catholic Church, Gachororo</h1>
       <p>Welcome to the St Paul Catholic Church, Gachororo page.</p>
       <p className='font-bold'>Mass times: Sunday 9am - 11am</p>
       <p className="mb-4">

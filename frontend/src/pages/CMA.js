@@ -3,7 +3,7 @@ import React from 'react';
 const CMA = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Catholic Men's Association (CMA)</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">Catholic Men's Association (CMA)</h1>
       <p className="mb-4">
       The Catholic Men Association (CMA) is a Church group for lay baptized
       and devout male members of the Roman Catholic Church. The group

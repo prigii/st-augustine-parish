@@ -3,7 +3,7 @@ import React from 'react';
 const MYM = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Missionary Youth Movement (MYM)</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">Missionary Youth Movement (MYM)</h1>
       <p className="mb-4">
         We are dedicated to ministering to youths between
         the ages of 14 years to 18 years, most of whom are

@@ -3,7 +3,7 @@ import React from 'react';
 const CWA = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Catholic Women's Association (CWA)</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">Catholic Women's Association (CWA)</h1>
       <p className="mb-4">
         Catholic Women Association is a lay movement which brings Catholic
         Women closer to God and unites them as they participate in the

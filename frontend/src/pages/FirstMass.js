@@ -3,7 +3,7 @@ import React from 'react';
 const FirstMass = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">St Augustine First Mass</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">St Augustine First Mass</h1>
       <p className="mb-4">Welcome to the St Augustine First Mass page.</p>
       <p className="mb-4">
         St. Augustine First Mass Outstation has an

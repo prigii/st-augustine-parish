@@ -3,8 +3,7 @@ import React from 'react';
 const LegionOfMary = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Legion of Mary</h1>
-      <p className='font-bold mb-4'>Meeting times: Sunday 3pm - 4pm (St Augustine Center)</p>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">Legion of Mary</h1>
       <p className="mb-4">
         The Legion of Mary is a Catholic lay movement that
         was founded in November 1936 by Edel Quinn in
@@ -25,6 +24,7 @@ const LegionOfMary = () => {
         their charitable works, prayer, and living out the
         Legionary spirit as exemplified by Edel Quinn.
       </p>
+      <p className='font-bold mb-4'>Meeting times: Sunday 3pm - 4pm (St Augustine Center)</p>
     </div>
   );
 };

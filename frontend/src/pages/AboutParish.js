@@ -9,7 +9,7 @@ const AboutParish = () => {
       <section id="about" className="p-8">
       <ImageCarousel />
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 mt-8">About St Augustine Catholic Parish</h2>
+          <h2 className="text-3xl font-bold mb-4 mt-8 text-yellow-500">About St Augustine Catholic Parish, Juja</h2>
           <p className="mb-4">
             St. Augustine Catholic Parish and University Chaplaincy was carved out of St. Theresa Catholic Parish,
             Kalimoni and inaugurated in September 2002, by the then Archbishop of Nairobi, the late Archbishop

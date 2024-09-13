@@ -3,7 +3,7 @@ import React from 'react';
 const PMC = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Pontifical Missionary Children (PMC)</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">Pontifical Missionary Children (PMC)</h1>
       <p className="mb-4">
       PMC stands for Pontifical Missionary Childhood
       (PMC). It is a group of children coming together to

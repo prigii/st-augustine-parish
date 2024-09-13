@@ -4,7 +4,7 @@ const SecondMass = () => {
   return (
     <div className="max-w-4xl mx-auto">
       <div>
-        <h1 className="text-2xl font-bold mb-4">St Augustine Second Mass</h1>
+        <h1 className="text-2xl font-bold mb-4 text-yellow-500">St Augustine Second Mass</h1>
         <p className="mb-4">Welcome to the St Augustine Second Mass page.</p>
         <p className="mb-4">
           The 2nd mass fraternity houses the Catholic

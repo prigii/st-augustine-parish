@@ -56,7 +56,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md p-4 text-black w-full top-0 z-50 flex flex-col md:flex-row justify-between items-center">
-      <div className="flex items-center justify-between w-full md:w-auto ml-20 mr-8">
+      <div className="flex items-center justify-between w-full md:w-auto ml-20">
         <div className="flex items-center">
           <img src={logo} alt="St Augustine" className="h-10 w-10 mr-3" />
           <div className="text-2xl font-bold leading-tight">
@@ -98,7 +98,7 @@ const Navbar = () => {
         </button>
       </div>
       <ul
-        className={`md:flex justify-center space-x-4 ${isOpen ? "block" : "hidden"} md:block w-full md:w-auto mt-4 md:mt-0`}
+        className={`md:flex justify-center space-x-6 ${isOpen ? "block" : "hidden"} md:block w-full md:w-auto mt-4 md:mt-0 mr-8`}
       >
         <li className="text-center md:text-left relative">
           <NavLink
@@ -387,7 +387,8 @@ const Navbar = () => {
           <button>
             <NavLink
               to="/donate"
-              className="bg-yellow-700 text-black block text-l font-semibold px-4 py-2 rounded hover:bg-yellow-800"
+              className="bg-yellow-500 text-black block text-l font-semibold px-4 py-2 rounded hover:bg-yellow-700"
+              onClick={closeMenu}
             >
               Donate
             </NavLink>

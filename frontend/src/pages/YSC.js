@@ -3,7 +3,7 @@ import React from 'react';
 const YSC = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Youth Serving Christ (YSC)</h1>
+      <h1 className="text-2xl font-bold mb-4 text-yellow-500">Youth Serving Christ (YSC)</h1>
       <p className="mb-4">
         The Youth Serving Christ (YSC) group is a vibrant
         community of young Catholics aged 18 to 26. With
