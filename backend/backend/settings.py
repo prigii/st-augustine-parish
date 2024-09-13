@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'core',
     'corsheaders',
+    'django.core.mail',
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +57,20 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 ROOT_URLCONF = 'backend.urls'
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.your-email-provider.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'your-email@example.com'
+EMAIL_HOST_PASSWORD = 'your-email-password'
+
+# Stripe settings
+STRIPE_SECRET_KEY = 'your-stripe-secret-key'
 
 TEMPLATES = [
     {
