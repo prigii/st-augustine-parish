@@ -1,13 +1,13 @@
 // src/pages/About.js
 import React from 'react';
-import ImageCarousel from '../components/imageCarousel';
+import ParishCenterCarousel from '../components/imageCarousel';
 
 const AboutParish = () => {
   return (
     <>
       
-      <section id="about" className="p-8">
-      <ImageCarousel />
+      <section id="about" className="">
+      <ParishCenterCarousel />
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-4 mt-8 text-yellow-500">About St Augustine Catholic Parish, Juja</h2>
           <p className="mb-4">

@@ -17,7 +17,7 @@ const VaticanNews = () => {
       <p>
         Stay updated with the latest news from the Vatican and the global Catholic Church. Find out about important events, messages from the Pope, and more.
       </p>
-      <div className='text-red-400 font-bold p-4'>
+      <div className='text-red-400 font-bold p-4 underline'>
           <p><a href="https://www.vaticannews.va/en.html" target='new'>Get Vatican News here</a></p>
       </div>
     </div>
