@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/st-augustine-parish/static/css/main.419c4d6a.css",
+    "main.js": "/st-augustine-parish/static/js/main.8b460f35.js",
+    "static/js/453.0e93b770.chunk.js": "/st-augustine-parish/static/js/453.0e93b770.chunk.js",
+    "static/media/church3.jpg": "/st-augustine-parish/static/media/church3.86595cebaa0a764caf4e.jpg",
+    "static/media/church8.jpg": "/st-augustine-parish/static/media/church8.ad1bdbb276530ffacefe.jpg",
+    "static/media/church4.jpg": "/st-augustine-parish/static/media/church4.8e34e93acaf1c6a3fd47.jpg",
+    "static/media/church5.jpg": "/st-augustine-parish/static/media/church5.cb6dfa252cdbc82fd02b.jpg",
+    "static/media/church.jpg": "/st-augustine-parish/static/media/church.46389da3a7551efe51ee.jpg",
+    "static/media/chapel1.jpg": "/st-augustine-parish/static/media/chapel1.b91715d283fcab68ab27.jpg",
+    "static/media/church7.jpg": "/st-augustine-parish/static/media/church7.0fc72ac2157175483036.jpg",
+    "static/media/church-front.jpg": "/st-augustine-parish/static/media/church-front.09fb84d6ac42c26d461e.jpg",
+    "static/media/StAugustine.png": "/st-augustine-parish/static/media/StAugustine.9ce91b07869ba116f5f1.png",
+    "static/media/augustine.webp": "/st-augustine-parish/static/media/augustine.f3f726eafff5356479f9.webp",
+    "static/media/donations.jpg": "/st-augustine-parish/static/media/donations.8aedda797a74accb73d4.jpg",
+    "static/media/mpesa-logo1.png": "/st-augustine-parish/static/media/mpesa-logo1.e4903076f9d42cae611f.png",
+    "static/media/hostchalice.jpg": "/st-augustine-parish/static/media/hostchalice.eb9259c355acf0586b86.jpg",
+    "static/media/staugustine.jpg": "/st-augustine-parish/static/media/staugustine.c7e328091f85d2292566.jpg",
+    "static/media/staugustine1.jpg": "/st-augustine-parish/static/media/staugustine1.a2f6feaf719a6519d443.jpg",
+    "index.html": "/st-augustine-parish/index.html",
+    "main.419c4d6a.css.map": "/st-augustine-parish/static/css/main.419c4d6a.css.map",
+    "main.8b460f35.js.map": "/st-augustine-parish/static/js/main.8b460f35.js.map",
+    "453.0e93b770.chunk.js.map": "/st-augustine-parish/static/js/453.0e93b770.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.419c4d6a.css",
+    "static/js/main.8b460f35.js"
+  ]
+}
