@@ -22,7 +22,8 @@ const MaryMotherOfGodMirimaini = () => {
           advanced stage. Spiritually, we have seen Small
           Christian Communities growing from two to 11
           eleven, namely:
-        <ol>
+      </p>
+      <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }} className="mb-4 ml-6">
           <li>St Monica SCC</li>
           <li>St John Paul II SCC</li>
           <li>St Agnes SCC</li>
@@ -31,8 +32,8 @@ const MaryMotherOfGodMirimaini = () => {
           <li>St Maria Goretti SCC</li>
           <li>St Bakhita SCC</li>
           <li>St John Bosco SCC</li>
-        </ol>
-      </p>
+      </ol>
+     
       <p className="mb-4">
         In the year 1994, the late Marysusan Njeri, a member
         donated a piece of land to build the Church. The late

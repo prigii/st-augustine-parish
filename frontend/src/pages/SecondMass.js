@@ -12,20 +12,21 @@ const SecondMass = () => {
             The 2nd mass fraternity houses the Catholic
             Community JKUAT under the Chaplaincy (CATCOM)
             with 8 Student SCCs and 3 non-student SCCs, namely:
-            <ol>
-              <li>St Agatha SCC</li>
-              <li>Mother Teresa of Calcutta SCC</li>
-              <li>St Padre Pio SCC</li>
-              <li>St Paul SCC</li>
-              <li>St Martin de Porres SCC</li>
-              <li>St Stephen SCC</li>
-              <li>St Therese of the Child Jesus SCC</li>
-              <li>St Jude SCC</li>
-              <li>St Charles Lwanga SCC</li>
-              <li>Mary Mother of God SCC</li>
-            </ol>
-          
           </p>
+          <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }} className="mb-4 ml-6">
+            <li>St Agatha SCC</li>
+            <li>Mother Teresa of Calcutta SCC</li>
+            <li>St Padre Pio SCC</li>
+            <li>St Paul SCC</li>
+            <li>St Martin de Porres SCC</li>
+            <li>St Stephen SCC</li>
+            <li>St Therese of the Child Jesus SCC</li>
+            <li>St Jude SCC</li>
+            <li>St Charles Lwanga SCC</li>
+            <li>Mary Mother of God SCC</li>
+          </ol>
+          
+         
           <p className="mb-4">
             The numbers attending
             2nd mass have been growing steadily and we thank

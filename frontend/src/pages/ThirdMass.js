@@ -18,7 +18,8 @@ const ThirdMass = () => {
           </p>
         <p className="mb-4">
           Third mass outstation currently has Eight SCCs, namely:
-          <ol>
+        </p>
+        <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }} className="mb-4 ml-6">
             <li>St Monica SCC</li>
             <li>St John Paul II SCC</li>
             <li>St Agnes SCC</li>
@@ -30,7 +31,7 @@ const ThirdMass = () => {
           </ol>
           Active ecclesial groups are CMA, CWA, PMC, MYM,
           Senior Youth, YCA and Choir.
-        </p>
+        
         <p className="mb-4">
         
         </p>

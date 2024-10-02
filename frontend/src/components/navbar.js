@@ -55,7 +55,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-white shadow-md p-4 text-black w-full top-0 z-50 flex flex-col md:flex-row justify-between items-center">
+    <nav className="bg-yellow-400 shadow-md p-4 text-black w-full top-0 z-50 flex flex-col md:flex-row justify-between items-center">
       <div className="flex items-center justify-between w-full md:w-auto ml-20">
         <div className="flex items-center">
           <img src={logo} alt="St Augustine" className="h-10 w-10 mr-3" />
@@ -387,7 +387,7 @@ const Navbar = () => {
           <button>
             <NavLink
               to="/donate"
-              className="bg-yellow-500 text-black block text-l font-semibold px-4 py-2 rounded hover:bg-yellow-700"
+              className="bg-gray-900 text-white block text-l font-semibold px-4 py-2 rounded hover:bg-yellow-700"
               onClick={closeMenu}
             >
               Donate

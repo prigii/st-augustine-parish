@@ -18,7 +18,8 @@ const StPaulGachororo = () => {
       <p className="mb-4">
       St. Paul Gachororo outstation has eleven
       Jumuiyas each having between 18 and 32 families. namely:
-        <ol>
+      </p>
+      <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }} className="mb-4 ml-6">
           <li>St Monica SCC</li>
           <li>St John Paul II SCC</li>
           <li>St Agnes SCC</li>
@@ -27,8 +28,8 @@ const StPaulGachororo = () => {
           <li>St Maria Goretti SCC</li>
           <li>St Bakhita SCC</li>
           <li>St John Bosco SCC</li>
-        </ol>
-      </p>
+      </ol>
+      
       <p className="mb-4">
         CMA has 30 Commissioned active members while CWAis an active group with 85 members. Choir, PMC, MYM,
         YCA and YSC are also active groups in our outstation

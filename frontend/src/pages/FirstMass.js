@@ -15,25 +15,26 @@ const FirstMass = () => {
           always the First Mass on Sunday hence the
           name. It has a total of 16 Small Christian
           Communities, namely:
-          <ol>
-            <li>St Kizito SCC</li>
-            <li>St Stephen SCC</li>
-            <li>St John the Baptist SCC</li>
-            <li>St Joseph the Worker SCC</li>
-            <li>St Jude SCC</li>
-            <li>St Rita SCC</li>
-            <li>St Jacinta SCC</li>
-            <li>Our Lady of Lourdes SCC</li>
-            <li>St Mathias Mulumba SCC</li>
-            <li>St Faustina SCC</li>
-            <li>St Lucy SCC</li>
-            <li>St Philomena SCC</li>
-            <li>St Theresa SCC</li>
-            <li>St Cecilia SCC</li>
-            <li>St Claire SCC</li>
-            <li>St  SCC</li>
-          </ol>
         </p>
+        <ol style={{ listStyleType: 'decimal', paddingLeft: '20px' }} className="mb-4 ml-6">
+          <li>St Kizito SCC</li>
+          <li>St Stephen SCC</li>
+          <li>St John the Baptist SCC</li>
+          <li>St Joseph the Worker SCC</li>
+          <li>St Jude SCC</li>
+          <li>St Rita SCC</li>
+          <li>St Jacinta SCC</li>
+          <li>Our Lady of Lourdes SCC</li>
+          <li>St Mathias Mulumba SCC</li>
+          <li>St Faustina SCC</li>
+          <li>St Lucy SCC</li>
+          <li>St Philomena SCC</li>
+          <li>St Theresa SCC</li>
+          <li>St Cecilia SCC</li>
+          <li>St Claire SCC</li>
+          <li>St  SCC</li>
+        </ol>
+      
         <p className="mb-4">
           The first mass also has ecclesial groups,
           Choir, CMA, CWA, MYM PMC and YCM,
