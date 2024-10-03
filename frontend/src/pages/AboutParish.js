@@ -6,14 +6,15 @@ const AboutParish = () => {
   return (
     <>
       
-      <section id="about" className="">
-      <ParishCenterCarousel />
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 mt-8 text-yellow-500">About St Augustine Catholic Parish, Juja</h2>
+      <section id="about" className="py-4 px-10">
+        <h1 className="text-4xl font-bold mb-8 px-10 text-center">About Us</h1>
+        <ParishCenterCarousel />
+        <div className="max-w-6xl mx-auto mt-12">
+          <h2 className="text-3xl text-center font-bold mb-4 mt-8 text-yellow-500">About St Augustine Catholic Parish, Juja</h2>
           <p className="mb-4">
             St. Augustine Catholic Parish and University Chaplaincy was carved out of St. Theresa Catholic Parish,
             Kalimoni and inaugurated in September 2002, by the then Archbishop of Nairobi, the late Archbishop
-            Raphael Ndingi Mwana a’Nzeki. We serve the Catholic community in part of Kiaora Ward of Juja SubCounty, including the Catholic community at Jomo Kenyatta University of Agriculture and Technology
+            Raphael Ndingi Mwana a’Nzeki. We serve the Catholic community in part of Kiaora Ward of Juja SubCounty, Kiambu County, including the Catholic community at Jomo Kenyatta University of Agriculture and Technology
             (JKUAT), also referred to as CatCom.
           </p>
           <p className="mb-4">

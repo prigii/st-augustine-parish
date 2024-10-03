@@ -35,9 +35,9 @@ import './index.css'
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="App">
         <Navbar />
-        <main className="container mx-auto">
+        <main className="">
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
             <Route path="/clergy" element={<Clergy />} />

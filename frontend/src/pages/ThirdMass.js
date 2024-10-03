@@ -3,9 +3,9 @@ import ParishCenterCarousel from '../components/imageCarousel';
 
 const ThirdMass = () => {
   return (
-    <section id="about" className="">
+    <section id="about" className="py-4 px-10">
       <ParishCenterCarousel />
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl font-bold mb-4 text-yellow-500">St Augustine Third Mass</h1>
         <p className='font-bold'>Mass times: Sunday 11am - 12.30pm</p>
         <p className="mb-4">Welcome to the St Augustine Third Mass page. Here you can find information about our activities, meetings, and more.</p>

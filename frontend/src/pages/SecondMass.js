@@ -3,9 +3,9 @@ import ParishCenterCarousel from '../components/imageCarousel';
 
 const SecondMass = () => {
   return (
-    <section id="about" className="p-">
+    <section id="about" className="py-4 px-10">
       <ParishCenterCarousel />
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div>
           <h1 className="text-2xl font-bold mb-4 mt-4 text-yellow-500">St Augustine Second Mass</h1>
           <p className="mb-4">

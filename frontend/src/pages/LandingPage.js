@@ -13,7 +13,7 @@ import Sacraments from '../components/sacraments';
 
 const LandingPage = () => {
   return (
-    <div className='max-w-6xl mx-auto'>
+    <div className='py-4 px-10'>
       
       <Hero />
       <About />
@@ -31,3 +31,5 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
+// max-w-6xl mx-auto

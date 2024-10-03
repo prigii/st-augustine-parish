@@ -13,7 +13,7 @@ const stripePromise = loadStripe('your-publishable-key-here');
 
 const Donate = () => {
   return (
-    <section id="about" className="">
+    <section id="about" className="py-4 px-10">
       <ParishCenterCarousel />
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl text-yellow-500 font-bold mb-4">Donate</h1>
