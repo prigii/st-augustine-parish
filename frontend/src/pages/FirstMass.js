@@ -32,7 +32,7 @@ const FirstMass = () => {
           <li>St Theresa SCC</li>
           <li>St Cecilia SCC</li>
           <li>St Claire SCC</li>
-          <li>St  SCC</li>
+          <li>St Joachim SCC</li>
         </ol>
       
         <p className="mb-4">

@@ -54,7 +54,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-yellow-500 shadow-md p-4 w-full flex">
+    <nav className="bg-yellow-200 shadow- p-4 w-full flex">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <NavLink to={'/'}><img src={logo} alt="St Augustine" className="h-10 w-10 mr-3" /></NavLink>
